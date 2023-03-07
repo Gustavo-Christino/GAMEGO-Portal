@@ -22,7 +22,10 @@ function link(n){
   if(n==0){
     document.getElementById("abaMenu").style.top = "100px";
   }else{
-    document.getElementById("abaMenu").style.top = "160px";
+    if(document.getElementById("abaMenu").style.top!="160px"){
+      document.getElementById("abaMenu").style.top = parseInt(document.getElementById("abaMenu").style.top)+1+"px";
+      setTimeout(link(n),20);
+    }
   }
 }
 
