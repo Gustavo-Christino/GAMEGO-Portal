@@ -20,11 +20,11 @@
 
 function link(event,n){
   if(n==0){
-    document.getElementById("abaMenu").style.top = "-100%";
-    document.getElementById("abaMenu").style.left = "-100%";
+    document.getElementById("abaMenu").style.top = "100px";
+    document.getElementById("abaMenu").style.filter = "opacity(100%)";
   }else{
-    document.getElementById("abaMenu").style.top = event.clientY+"px";
-    document.getElementById("abaMenu").style.left = event.clientX+"px";
+    document.getElementById("abaMenu").style.top = "160px";
+    document.getElementById("abaMenu").style.filter = "opacity(0%)";
   }
 }
 
@@ -35,7 +35,7 @@ function link(event,n){
 <body>
 
 <!-- Link -->
-<div id="abaMenu" style="position:fixed;top:-100%;left:-100%;">
+<div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;filter:opacity(100%);">
   <div id="abaMenuL" style="width:100px;background:rgb(255,255,255);border:1px solid rgb(0,0,0);">
     GAMEGO<br/>
     Diretoria<br/>
