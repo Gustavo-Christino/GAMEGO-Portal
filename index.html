@@ -14,6 +14,9 @@
 .op1{height:100%;width:100px;background:rgba(0,0,0,0);border:0px none;color:rgb(0,0,0);}
 .op1:hover{height:100%;width:100px;background:rgba(0,0,0,0);border:1px solid rgb(0,0,0);color:rgb(0,0,0);}
 
+.op2{height:80%;width:150px;background:rgba(0,0,0,0);border:0px none;color:rgb(0,0,0);}
+.op2:hover{height:80%;width:150px;background:rgba(0,0,0,0);border:1px solid rgb(0,0,0);color:rgb(0,0,0);}
+
 </style>
 
 <script type="text/javascript">
@@ -22,9 +25,23 @@ function link(n){
   if(n==0){
     document.getElementById("abaMenu").style.top = "100px";
   }else{
-    if(document.getElementById("abaMenu").style.top!="160px"){
-      document.getElementById("abaMenu").style.top = parseInt(document.getElementById("abaMenu").style.top)+1+"px";
-      setTimeout(link(n),20);
+    document.getElementById("abaMenu").style.top = "160px";
+    if(n==1){
+      document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">GAMEGO</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Diretoria</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Comunidade</button>";
+    }
+    if(n==2){
+      document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">Empresas Associadas</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Empresas Afiliadas</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Empresas Parceiras</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Associe-se</button>";
+    }
+    if(n==3){
+      document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">dos Associados</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Agenda de Eventos</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Guia de Iniciantes</button>";
+      document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Blog/Vlog</button>";
     }
   }
 }
@@ -37,7 +54,7 @@ function link(n){
 
 <!-- Link -->
 <div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;">
-  <div id="abaMenuL" style="height:50px;width:100%;background:rgb(255,255,255);border-top:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);display:flex;align-items:center;justify-content:center;">
+  <div id="abaMenuL" style="height:50px;width:100%;background:rgb(255,255,255);border-bottom:1px solid rgb(0,0,0);display:flex;align-items:center;justify-content:center;">
     <button>GAMEGO</button>
     <button>Diretoria</button>
     <button>Comunidade</button>
@@ -54,11 +71,11 @@ function link(n){
   <div style="height:100px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
       <img src="ext/LOGO_GAMEGO.webp" style="height:100%;"/>
   </div>
-  <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
-    <button class="op1" onmousedown="link(1)" onmouseout="link(0)">SOBRE</button>
-    <button class="op1" onmousedown="link(2)" onmouseout="link(0)">EMPRESAS</button>
+  <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);border-bottom:1px solid rgb(0,0,0);">
+    <button class="op1" onmouseover="link(1)" onmouseout="link(0)">SOBRE</button>
+    <button class="op1" onmouseover="link(2)" onmouseout="link(0)">EMPRESAS</button>
     <a href="pessoas.html" style="height:100%;"><button class="op1">PESSOAS</button></a>
-    <button class="op1" onmousedown="link(3)" onmouseout="link(0)">PROJETOS</button>
+    <button class="op1" onmouseover="link(3)" onmouseout="link(0)">PROJETOS</button>
     <a href="contato.html" style="height:100%;"><button class="op1">CONTATO</button></a>
   </div>
 </div>
