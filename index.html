@@ -28,21 +28,21 @@ function link(n){
     document.getElementById("abaMenu").style.top = "160px";
   }
   if(n==1){
-    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">GAMEGO</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Diretoria</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Comunidade GameDev</button>";
+    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/gamego.html'\">GAMEGO</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/diretoria.html'\">Diretoria</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/gamedev.html'\">Comunidade GameDev</button>";
   }
   if(n==2){
-    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">Associadas</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Afiliadas</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Parceiras</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Associe-se</button>";
+    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/associadas.html'\">Associadas</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/afiliadas.html'\">Afiliadas</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/parcerias.html'\">Parceiras</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/associar.html'\">Associe-se</button>";
   }
   if(n==3){
-    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">de Associados</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Agenda de Eventos</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Guia de Iniciantes</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Blog/Vlog</button>";
+    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/projetos.html'\">de Associados</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/eventos.html'\">Agenda de Eventos</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/iniciantes.html'\">Guia de Iniciantes</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/blog.html'\">Blog/Vlog</button>";
   }
 }
 
@@ -79,7 +79,7 @@ function link(n){
 
 <!-- CORPO -->
 <div style="position:absolute;top:0px;left:0px;right:0px;bottom:-100%;z-index:0;" onmouseover="link(0)">
-  <div style="height:100vh;width:100vw;">
+  <div style="height:100vh;width:100%;">
   </div>
   <div style="height:400px;width:100%;background:rgb(50,50,50);display:flex;align-items:center;justify-content:center;">
     rodapé
