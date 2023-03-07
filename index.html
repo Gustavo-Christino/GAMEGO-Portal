@@ -16,13 +16,32 @@
 </style>
 
 <script type="text/javascript">
-  
+
+function link(event,n){
+  if(n==0){
+    document.getElementById("abaMenu").style.top = "-100%";
+    document.getElementById("abaMenu").style.left = "-100%";
+  }else{
+    document.getElementById("abaMenu").style.top = event.clientY;
+    document.getElementById("abaMenu").style.left = event.clientX;
+  }
+}
+
 </script>
 
 </head>
 
 <body>
-  
+
+<!-- Link -->
+<div id="abaMenu" style="position:fixed;top:-100%;left:-100%;" onmouseover="link(event,0)">
+  <div id="abaMenuL" style="width:100px;background:rgb(255,255,255);border:1px solid rgb(0,0,0);">
+    GAMEGO<br/>
+    Diretoria<br/>
+    Comunidade
+  </div>
+</div>
+
 <!-- BANDEIRAS -->
 <div style="position:fixed;top:10px;right:10px;z-index:3;">
   <button>BR</button><button>EUS</button>
@@ -34,10 +53,10 @@
       <img src="ext/LOGO_GAMEGO.webp" style="height:100%;"/>
   </div>
   <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;">
-    <button class="op1">SOBRE</button>
-    <button class="op1">EMPRESAS</button>
+    <button class="op1" onmousedown="link(event,1)">SOBRE</button>
+    <button class="op1" onmousedown="link(event,2)">EMPRESAS</button>
     <a href="pessoas.html"><button class="op1">PESSOAS</button></a>
-    <button class="op1">PROJETOS</button>
+    <button class="op1" onmousedown="link(event,3)">PROJETOS</button>
     <a href="contato.html"><button class="op1">CONTATO</button></a>
   </div>
 </div>
