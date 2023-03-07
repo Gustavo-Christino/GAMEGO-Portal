@@ -23,11 +23,8 @@ function link(event,n){
     document.getElementById("abaMenu").style.top = "-100%";
     document.getElementById("abaMenu").style.left = "-100%";
   }else{
-    document.getElementById("abaMenu").style.top = event.clientY;
-    document.getElementById("abaMenu").style.left = event.clientX;
-    console.log("Rodou? "+n);
-    console.log(event.clientY);
-    console.log(event.clientX);
+    document.getElementById("abaMenu").style.top = event.clientY+"px";
+    document.getElementById("abaMenu").style.left = event.clientX+"px";
   }
 }
 
