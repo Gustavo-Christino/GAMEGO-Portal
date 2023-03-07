@@ -53,7 +53,7 @@ function link(n){
 <body>
 
 <!-- Link -->
-<div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;">
+<div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;" onmouseout="link(0)">
   <div id="abaMenuL" style="height:50px;width:100%;background:rgb(255,255,255);border-bottom:1px solid rgb(0,0,0);display:flex;align-items:center;justify-content:center;">
     <button>GAMEGO</button>
     <button>Diretoria</button>
@@ -72,10 +72,10 @@ function link(n){
       <img src="ext/LOGO_GAMEGO.webp" style="height:100%;"/>
   </div>
   <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);border-bottom:1px solid rgb(0,0,0);">
-    <button class="op1" onmouseover="link(1)" onmouseout="link(0)">SOBRE</button>
-    <button class="op1" onmouseover="link(2)" onmouseout="link(0)">EMPRESAS</button>
+    <button class="op1" onmouseover="link(1)">SOBRE</button>
+    <button class="op1" onmouseover="link(2)">EMPRESAS</button>
     <a href="pessoas.html" style="height:100%;"><button class="op1">PESSOAS</button></a>
-    <button class="op1" onmouseover="link(3)" onmouseout="link(0)">PROJETOS</button>
+    <button class="op1" onmouseover="link(3)">PROJETOS</button>
     <a href="contato.html" style="height:100%;"><button class="op1">CONTATO</button></a>
   </div>
 </div>
