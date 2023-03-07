@@ -22,10 +22,10 @@
 <script type="text/javascript">
 
 function link(n){
-  if(document.getElementById("abaMenu").style.top=="100px"){
-    document.getElementById("abaMenu").style.top = "160px";
-  }else{
+  if(n==0){
     document.getElementById("abaMenu").style.top = "100px";
+  }else{
+    document.getElementById("abaMenu").style.top = "160px";
   }
   if(n==1){
     document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">GAMEGO</button>";
@@ -80,6 +80,9 @@ function link(n){
   </div>
 </div>
 
+<!-- CORPO -->
+<div style="position:absolute;top:0px;left:0px;right:0px;bottom:-100%;z-index:0;" onmouseover="link(0)">
+</div>
 
 </body>
 
