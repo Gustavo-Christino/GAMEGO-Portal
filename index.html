@@ -11,11 +11,8 @@
 
 <style type="text/css">
 
-.op1{height:100%;width:100px;background:rgba(0,0,0,0);border:0px none;color:rgb(0,0,0);}
-.op1:hover{height:100%;width:100px;background:rgba(0,0,0,0);border:1px solid rgb(0,0,0);color:rgb(0,0,0);}
-
-.op2{height:80%;width:150px;background:rgba(0,0,0,0);border:0px none;color:rgb(0,0,0);}
-.op2:hover{height:80%;width:150px;background:rgba(0,0,0,0);border:1px solid rgb(0,0,0);color:rgb(0,0,0);}
+.op1{height:80%;width:100px;background:rgba(0,0,0,0);border:0px none;color:rgb(0,0,0);}
+.op1:hover{height:80%;width:100px;background:rgba(0,0,0,0);border:1px solid rgb(0,0,0);color:rgb(0,0,0);}
 
 </style>
 
@@ -28,21 +25,21 @@ function link(n){
     document.getElementById("abaMenu").style.top = "100px";
   }
   if(n==1){
-    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">GAMEGO</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Diretoria</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Comunidade</button>";
+    document.getElementById("abaMenuL").innerHTML = "<button class=\"op1\">GAMEGO</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Diretoria</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Comunidade</button>";
   }
   if(n==2){
-    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">Empresas Associadas</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Empresas Afiliadas</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Empresas Parceiras</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Associe-se</button>";
+    document.getElementById("abaMenuL").innerHTML = "<button class=\"op1\">Empresas Associadas</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Empresas Afiliadas</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Empresas Parceiras</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Associe-se</button>";
   }
   if(n==3){
-    document.getElementById("abaMenuL").innerHTML = "<button class=\"op2\">dos Associados</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Agenda de Eventos</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Guia de Iniciantes</button>";
-    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\">Blog/Vlog</button>";
+    document.getElementById("abaMenuL").innerHTML = "<button class=\"op1\">dos Associados</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Agenda de Eventos</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Guia de Iniciantes</button>";
+    document.getElementById("abaMenuL").innerHTML+= "<button class=\"op1\">Blog/Vlog</button>";
   }
 }
 
@@ -74,9 +71,9 @@ function link(n){
   <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);border-bottom:1px solid rgb(0,0,0);">
     <button class="op1" onmousedown="link(1)">SOBRE</button>
     <button class="op1" onmousedown="link(2)">EMPRESAS</button>
-    <a href="pessoas.html" style="height:100%;"><button class="op1">PESSOAS</button></a>
+    <button class="op1" onmousedown="window.location.href=\"https://gustavo-christino.github.io/GAMEGO-Portal/pessoas.html\";">PESSOAS</button>
     <button class="op1" onmousedown="link(3)">PROJETOS</button>
-    <a href="contato.html" style="height:100%;"><button class="op1">CONTATO</button></a>
+    <button class="op1" onmousedown="window.location.href=\"https://gustavo-christino.github.io/GAMEGO-Portal/contato.html\";">CONTATO</button>
   </div>
 </div>
 
