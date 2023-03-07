@@ -21,10 +21,8 @@
 function link(event,n){
   if(n==0){
     document.getElementById("abaMenu").style.top = "100px";
-    document.getElementById("abaMenu").style.filter = "opacity(100%)";
   }else{
     document.getElementById("abaMenu").style.top = "160px";
-    document.getElementById("abaMenu").style.filter = "opacity(0%)";
   }
 }
 
@@ -35,7 +33,7 @@ function link(event,n){
 <body>
 
 <!-- Link -->
-<div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;filter:opacity(100%);">
+<div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;">
   <div id="abaMenuL" style="width:100px;background:rgb(255,255,255);border:1px solid rgb(0,0,0);">
     GAMEGO<br/>
     Diretoria<br/>
@@ -50,10 +48,10 @@ function link(event,n){
 
 <!-- LOGO/MENU -->
 <div style="position:fixed;top:0px;left:0px;right:0px;z-index:2;">
-  <div style="height:100px;width:100%;display:flex;align-items:center;justify-content:center;">
+  <div style="height:100px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
       <img src="ext/LOGO_GAMEGO.webp" style="height:100%;"/>
   </div>
-  <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;">
+  <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
     <button class="op1" onmousedown="link(event,1)">SOBRE</button>
     <button class="op1" onmousedown="link(event,2)">EMPRESAS</button>
     <a href="pessoas.html" style="height:100%;"><button class="op1">PESSOAS</button></a>
