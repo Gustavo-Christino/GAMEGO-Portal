@@ -18,7 +18,7 @@
 
 <script type="text/javascript">
 
-function link(event,n){
+function link(n){
   if(n==0){
     document.getElementById("abaMenu").style.top = "100px";
   }else{
@@ -34,7 +34,7 @@ function link(event,n){
 
 <!-- Link -->
 <div id="abaMenu" style="position:fixed;top:100px;left:0px;right:0px;z-index:1;">
-  <div id="abaMenuL" style="width:100px;background:rgb(255,255,255);border-top:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);display:flex;align-items:center;justify-content:center;">
+  <div id="abaMenuL" style="height:50px;width:100px;background:rgb(255,255,255);border-top:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);display:flex;align-items:center;justify-content:center;">
     <button>GAMEGO</button>
     <button>Diretoria</button>
     <button>Comunidade</button>
@@ -52,10 +52,10 @@ function link(event,n){
       <img src="ext/LOGO_GAMEGO.webp" style="height:100%;"/>
   </div>
   <div style="height:60px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
-    <button class="op1" onmousedown="link(event,1)">SOBRE</button>
-    <button class="op1" onmousedown="link(event,2)">EMPRESAS</button>
+    <button class="op1" onmousedown="link(1)" onmouseout="link(0)">SOBRE</button>
+    <button class="op1" onmousedown="link(2)" onmouseout="link(0)">EMPRESAS</button>
     <a href="pessoas.html" style="height:100%;"><button class="op1">PESSOAS</button></a>
-    <button class="op1" onmousedown="link(event,3)">PROJETOS</button>
+    <button class="op1" onmousedown="link(3)" onmouseout="link(0)">PROJETOS</button>
     <a href="contato.html" style="height:100%;"><button class="op1">CONTATO</button></a>
   </div>
 </div>
