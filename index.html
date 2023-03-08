@@ -23,6 +23,8 @@
 .op2{height:80%;width:min(150px,19.5%);background:rgba(0,0,0,0);border:0px none;color:rgb(0,0,0);text-shadow:0px 0px 1px rgb(255,255,255),0px 0px 3px rgb(255,255,255);}
 .op2:hover{height:80%;width:min(150px,19.5%);background:rgba(0,0,0,0);border:1px solid rgb(0,0,0);color:rgb(0,0,0);text-shadow:0px 0px 1px rgb(255,255,255),0px 0px 3px rgb(255,255,255);}
 
+.dark-mode {background-color:rgb(0,0,0);color:rgb(255,255,255);}
+
 </style>
 
 <script type="text/javascript">
@@ -51,6 +53,11 @@ function link(n){
     document.getElementById("abaMenuL").innerHTML+= "<button class=\"op2\" onmousedown=\"window.location.href='https://gustavo-christino.github.io/GAMEGO-Portal/blog.html'\">Blog/Vlog</button>";
   }
 }
+  
+function DarkMode(){
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
 </script>
 
@@ -71,7 +78,7 @@ function link(n){
 
 <!-- Modo Dark -->
 <div style="position:fixed;top:10px;left:10px;z-index:3;">
-   <input type="checkbox" name="estilo" min="0" max="1">Dark
+  <button onmousedown="DarkMode()">Dark</button>
 </div>
 
 <!-- LOGO/MENU -->
