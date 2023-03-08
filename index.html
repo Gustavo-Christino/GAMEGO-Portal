@@ -57,6 +57,11 @@ function link(n){
 function DarkMode(){
   var element = document.body;
   element.classList.toggle("dark-mode");
+  if(document.getElementById("menu").style.background=="rgb(0,0,0)"){
+    document.getElementById("menu").style.background="rgb(255,255,255)";
+  }else{
+    document.getElementById("menu").style.background="rgb(0,0,0)";
+  }
 }
 
 </script>
@@ -83,7 +88,7 @@ function DarkMode(){
 
 <!-- LOGO/MENU -->
 <div style="position:fixed;top:0px;left:0px;right:0px;z-index:2;">
-  <div style="height:70px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
+  <div id="menu" style="height:70px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);">
       <img src="ext/LGA.webp" style="height:100%;"/>
   </div>
   <div style="height:50px;width:100%;display:flex;align-items:center;justify-content:center;background:rgb(255,255,255);border-bottom:1px solid rgb(0,0,0);">
